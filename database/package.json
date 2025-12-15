@@ -1,0 +1,29 @@
+{
+  "name": "@keephero/database",
+  "type": "module",
+  "version": "0.0.0-dev",
+  "private": true,
+  "imports": {
+    "#*": "./*"
+  },
+  "scripts": {
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev --create-only --name",
+    "release": "prisma migrate deploy",
+    "push": "prisma db push",
+    "start": "prisma studio --port 2000 --browser none",
+    "status": "prisma migrate status"
+  },
+  "dependencies": {
+    "kysely": "0.28.8",
+    "pg": "8.16.3",
+    "pgvector": "0.2.1"
+  },
+  "devDependencies": {
+    "@keephero/logger": "workspace:*",
+    "@types/pg": "8.15.6",
+    "dotenv": "17.2.3",
+    "prisma": "7.1.0",
+    "prisma-kysely": "2.2.1"
+  }
+}

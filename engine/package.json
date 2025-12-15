@@ -1,0 +1,35 @@
+{
+  "name": "@keephero/engine",
+  "type": "module",
+  "version": "0.0.0-dev",
+  "private": true,
+  "exports": "./index.ts",
+  "imports": {
+    "#*": "./*"
+  },
+  "scripts": {
+    "generate": "wrangler types",
+    "start": "vite dev --host --port 4000"
+  },
+  "dependencies": {
+    "@clerk/backend": "2.27.0",
+    "@clerk/shared": "3.39.0",
+    "@cloudflare/vite-plugin": "1.15.3",
+    "@keephero/agent": "workspace:*",
+    "@keephero/database": "workspace:*",
+    "@keephero/logger": "workspace:*",
+    "@orpc/client": "^1.12.2",
+    "@orpc/contract": "^1.12.2",
+    "@orpc/openapi": "1.12.2",
+    "@orpc/openapi-client": "1.12.2",
+    "@orpc/server": "1.12.2",
+    "@orpc/zod": "1.12.2",
+    "@sindresorhus/slugify": "3.0.0",
+    "es-toolkit": "1.42.0",
+    "kysely": "0.28.8",
+    "nanoid": "5.1.6",
+    "pgvector": "0.2.1",
+    "wrangler": "4.51.0",
+    "zod": "4.1.12"
+  }
+}

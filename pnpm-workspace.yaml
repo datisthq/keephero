@@ -1,0 +1,9 @@
+dangerouslyAllowAllBuilds: true
+packages:
+  - agent
+  - browser
+  - database
+  - engine
+  - logger
+  - mobile
+  - website
