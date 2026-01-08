@@ -1,6 +1,6 @@
 import type { Database } from "@keephero/database"
 import { jsonArrayFrom } from "kysely/helpers/postgres"
-import type { SearchConfig } from "#schemas/search.ts"
+import type { SearchConfig } from "#models/search.ts"
 import type { User } from "#types/user.ts"
 import { applySearchConfig } from "#utils/search.ts"
 

@@ -1,7 +1,7 @@
 import { z } from "zod"
 import { countLinks } from "#actions/link/count.ts"
 import { privateEndpoint } from "#endpoints/base/private.ts"
-import { SearchConfig } from "#schemas/search.ts"
+import { SearchConfig } from "#models/search.ts"
 
 export const countLinksEndpoint = privateEndpoint
   .input(

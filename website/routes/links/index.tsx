@@ -18,12 +18,12 @@ function Component() {
   return (
     <div className="flex flex-col gap-4">
       <Header />
-      {searchLinks.data.map((link) => (
+      {searchLinks.data.map(link => (
         <Link
           key={link.url}
           title={link.title}
           readingTime={`${link.readingTime} min read`}
-          tags={link.tags.map((tag) => `${tag.emoji} ${tag.keyword}`)}
+          tags={link.tags.map(tag => `${tag.emoji} ${tag.keyword}`)}
         />
       ))}
     </div>

@@ -2,7 +2,6 @@ import { Link as TanstackLink } from "@tanstack/react-router"
 import { Badge } from "#blocks/badge.tsx"
 import { Button } from "#blocks/button.tsx"
 import { Card, CardContent, CardTitle } from "#blocks/card.tsx"
-import { cn } from "#helpers/style.ts"
 import * as icons from "#icons.ts"
 
 export function Link(props: {
