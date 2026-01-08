@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router"
-import { Channel } from "#components/Channel/index.ts"
+import { Channel } from "#components/channel/Channel.tsx"
 import { Header } from "./-shared/Header.tsx"
 
 export const Route = createFileRoute("/channels/")({

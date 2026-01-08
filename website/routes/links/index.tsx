@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query"
 import { createFileRoute } from "@tanstack/react-router"
-import { Link } from "#components/Link/index.ts"
+import { Link } from "#components/link/Link.tsx"
 import { engine } from "#services/engine.ts"
 import { Header } from "./-shared/Header.tsx"
 

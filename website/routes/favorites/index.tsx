@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router"
-import { Link } from "#components/Link/index.ts"
+import { Link } from "#components/link/Link.tsx"
 import { Header } from "./-shared/Header.tsx"
 
 export const Route = createFileRoute("/favorites/")({

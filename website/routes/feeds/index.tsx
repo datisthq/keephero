@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router"
-import { Feed } from "#components/Feed/index.ts"
+import { Feed } from "#components/feed/Feed.tsx"
 import { Header } from "./-shared/Header.tsx"
 
 export const Route = createFileRoute("/feeds/")({

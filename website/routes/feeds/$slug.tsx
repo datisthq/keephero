@@ -1,7 +1,7 @@
 import { createFileRoute, Link as TanstackLink } from "@tanstack/react-router"
 import { Button } from "#blocks/button.tsx"
-import { Feed } from "#components/Feed/index.ts"
-import { Link } from "#components/Link/index.ts"
+import { Feed } from "#components/feed/Feed.tsx"
+import { Link } from "#components/link/Link.tsx"
 import * as icons from "#icons.ts"
 import * as settings from "#settings.ts"
 
