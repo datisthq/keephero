@@ -12,7 +12,7 @@ try {
 
 export default defineConfig({
   test: {
-    include: ["**/*.spec.(ts|tsx)"],
+    include: ["**/*.unit.(ts|tsx)"],
     exclude: [...configDefaults.exclude, "**/build/**"],
     env: { NODE_OPTIONS: "--no-warnings" },
     testTimeout: 60 * 1000,
