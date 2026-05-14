@@ -37,6 +37,13 @@ keephero — next-generation bookmarking and read-it-later service. pnpm workspa
 - Place high-level public items first in a file and low-level private items last
 - Use ES modules with full import paths including the ".ts(x)" file extension
 
+## Patterns
+
+- Inline props types in the function signature
+- Destructure props as the first line of a function if needed (not in the signature)
+- Import settings with `import * as settings`
+- Import icons with `import * as icons`
+
 ## Types
 
 - Use strict TypeScript with null checks but don't add explicit return types to functions

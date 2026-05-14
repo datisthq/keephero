@@ -63,9 +63,7 @@ compile/
 dist/
 .astro/
 /docs/content/docs/reference/
-.cursor/
 .serena/
-.mcp.json
 # .env
 .env.local
 messages.js
