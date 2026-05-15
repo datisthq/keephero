@@ -6,7 +6,6 @@
   "scripts": {
     "build": "pnpm -F !browser -F !portal build",
     "bump": "ncu -ws -u",
-    "clean": "rm -rf **/node_modules",
     "coverage": "sensible-browser coverage/index.html",
     "generate": "pnpm --parallel generate",
     "format": "vp fmt",
