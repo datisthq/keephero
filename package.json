@@ -9,16 +9,16 @@
     "coverage": "sensible-browser coverage/index.html",
     "generate": "pnpm --parallel generate",
     "format": "vp fmt",
+    "leaks": "gitleaks git --config=.gitleaks.toml --verbose --redact",
     "lint": "vp fmt --check && vp lint",
     "install:ci": "pnpm install --ignore-scripts",
     "prepare": "lefthook install",
     "unit": "vp test",
+    "scan": "pnpm leaks && pnpm vulns",
     "start": "pnpm --parallel -F engine -F website start",
     "test": "pnpm lint && pnpm type && pnpm unit",
     "type": "pnpm -r type",
-    "leaks": "gitleaks git --config=.gitleaks.toml --verbose --redact",
-    "vulns": "semgrep --config=p/typescript --config=p/nodejs --config=p/owasp-top-ten --config=p/secrets --exclude=\"**/fixtures/**\" --metrics=off",
-    "scan": "pnpm leaks && pnpm vulns"
+    "vulns": "semgrep --config=p/typescript --config=p/nodejs --config=p/owasp-top-ten --config=p/secrets --exclude=\"**/fixtures/**\" --metrics=off"
   },
   "devDependencies": {
     "@semantic-release/exec": "7.1.0",

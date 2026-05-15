@@ -1,4 +1,3 @@
-dangerouslyAllowAllBuilds: true
 packages:
   - agent
   - browser
@@ -7,3 +6,14 @@ packages:
   - logger
   - mobile
   - website
+
+allowBuilds:
+  "@clerk/shared": true
+  "@parcel/watcher": true
+  "@prisma/engines": true
+  esbuild: true
+  lefthook: true
+  msw: true
+  prisma: true
+  sharp: true
+  workerd: true
