@@ -1,8 +1,8 @@
 {
   "name": "@keephero/logger",
-  "type": "module",
   "version": "0.0.0-dev",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@loglayer/transport-tslog": "3.0.4",
     "loglayer": "6.9.1",

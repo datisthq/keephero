@@ -1,29 +1,24 @@
 {
   "name": "keephero",
-  "type": "module",
   "version": "0.0.0-dev",
   "private": true,
-  "engines": {
-    "node": "^24.0.0",
-    "pnpm": "^10.0.0"
-  },
+  "type": "module",
   "scripts": {
     "build": "pnpm -F !browser -F !portal build",
     "bump": "ncu -ws -u",
     "clean": "rm -rf **/node_modules",
     "coverage": "sensible-browser coverage/index.html",
     "generate": "pnpm --parallel generate",
-    "format": "biome check --write",
-    "lint": "biome check",
+    "format": "vp fmt",
+    "lint": "vp fmt --check && vp lint",
     "install:ci": "pnpm install --ignore-scripts",
     "prepare": "lefthook install",
-    "spec": "vitest run",
+    "unit": "vp test",
     "start": "pnpm --parallel -F engine -F website start",
-    "test": "pnpm lint && pnpm type && pnpm spec",
+    "test": "pnpm lint && pnpm type && pnpm unit",
     "type": "pnpm -r type"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.8",
     "@semantic-release/exec": "7.1.0",
     "@types/node": "24.2.0",
     "@vitest/coverage-v8": "4.0.8",
@@ -37,8 +32,13 @@
     "type-fest": "4.41.0",
     "typescript": "5.9.2",
     "vite": "7.2.2",
+    "vite-plus": "0.1.19",
     "vitest": "4.0.8",
     "vitest-polly": "1.4.0"
+  },
+  "engines": {
+    "node": "^24.0.0",
+    "pnpm": "^10.0.0"
   },
   "packageManager": "pnpm@10.21.0+sha512.da3337267e400fdd3d479a6c68079ac6db01d8ca4f67572083e722775a796788a7a9956613749e000fac20d424b594f7a791a5f4e2e13581c5ef947f26968a40"
 }

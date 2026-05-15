@@ -1,12 +1,12 @@
 {
   "name": "@keephero/engine",
-  "type": "module",
   "version": "0.0.0-dev",
   "private": true,
-  "exports": "./index.ts",
+  "type": "module",
   "imports": {
     "#*": "./*"
   },
+  "exports": "./index.ts",
   "scripts": {
     "generate": "wrangler types",
     "start": "vite dev --host --port 4000"

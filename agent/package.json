@@ -1,20 +1,20 @@
 {
   "name": "@keephero/agent",
-  "type": "module",
   "version": "0.0.0-dev",
   "private": true,
-  "exports": "./index.ts",
+  "type": "module",
   "imports": {
     "#*": "./*"
   },
+  "exports": "./index.ts",
   "scripts": {
     "build": "mastra build",
     "start": "mastra dev --dir ."
   },
   "dependencies": {
     "@ai-sdk/openai": "2.0.76",
-    "@keephero/logger": "workspace:*",
     "@keephero/database": "workspace:*",
+    "@keephero/logger": "workspace:*",
     "@mastra/core": "1.0.0-beta.11",
     "@mendable/firecrawl-js": "4.8.2",
     "ai": "5.0.106",

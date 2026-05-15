@@ -1,8 +1,8 @@
 {
   "name": "@keephero/website",
-  "type": "module",
   "version": "0.0.0-dev",
   "private": true,
+  "type": "module",
   "imports": {
     "#*": "./*"
   },
