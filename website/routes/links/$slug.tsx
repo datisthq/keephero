@@ -2,13 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router"
 import { Alert, AlertDescription, AlertTitle } from "#blocks/alert.tsx"
 import { Badge } from "#blocks/badge.tsx"
 import { Button } from "#blocks/button.tsx"
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "#blocks/card.tsx"
+import { Card, CardAction, CardContent, CardHeader, CardTitle } from "#blocks/card.tsx"
 import { Separator } from "#blocks/separator.tsx"
 import * as icons from "#icons.ts"
 import * as settings from "#settings.ts"
@@ -33,34 +27,19 @@ export function Header() {
         to="/links"
         className="text-md text-muted-foreground pl-2 hover:text-primary flex items-center gap-2"
       >
-        <icons.Return
-          strokeWidth={settings.ICON_STROKE_WIDTH}
-          className="size-5"
-        />
+        <icons.Return strokeWidth={settings.ICON_STROKE_WIDTH} className="size-5" />
         Return to links
       </Link>
       <div className="flex gap-2">
-        <Button
-          variant="ghost"
-          size="default"
-          className="rounded-xl cursor-pointer"
-        >
+        <Button variant="ghost" size="default" className="rounded-xl cursor-pointer">
           <icons.History strokeWidth={settings.ICON_STROKE_WIDTH} />
           <span className="text-xl">Snooze</span>
         </Button>
-        <Button
-          variant="ghost"
-          size="default"
-          className="rounded-xl cursor-pointer"
-        >
+        <Button variant="ghost" size="default" className="rounded-xl cursor-pointer">
           <icons.Store strokeWidth={settings.ICON_STROKE_WIDTH} />
           <span className="text-xl">Archive</span>
         </Button>
-        <Button
-          variant="ghost"
-          size="default"
-          className="rounded-xl cursor-pointer"
-        >
+        <Button variant="ghost" size="default" className="rounded-xl cursor-pointer">
           <icons.Delete strokeWidth={settings.ICON_STROKE_WIDTH} />
           <span className="text-xl">Delete</span>
         </Button>
@@ -108,8 +87,8 @@ function Body() {
             </div>
           </AlertTitle>
           <AlertDescription className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
           </AlertDescription>
         </Alert>
         <Separator />
@@ -118,28 +97,26 @@ function Body() {
             <div>
               <h2 className="text-xl font-semibold mb-2">Introduction</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
               </p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">Key Concepts</h2>
               <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">Conclusion</h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
               </p>
             </div>
           </div>

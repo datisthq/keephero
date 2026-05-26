@@ -28,11 +28,7 @@ export function Import() {
 function ImportButton() {
   return (
     <DialogTrigger asChild>
-      <Button
-        variant="ghost"
-        size="default"
-        className="rounded-xl cursor-pointer"
-      >
+      <Button variant="ghost" size="default" className="rounded-xl cursor-pointer">
         <icons.Add strokeWidth={settings.ICON_STROKE_WIDTH} />
         <span className="text-xl">Import</span>
       </Button>
@@ -91,11 +87,7 @@ function ImportDialog() {
           <Button variant="outline" className="cursor-pointer">
             Cancel
           </Button>
-          <Button
-            className="cursor-pointer"
-            disabled={!url}
-            onClick={handleSubmit}
-          >
+          <Button className="cursor-pointer" disabled={!url} onClick={handleSubmit}>
             Import
           </Button>
         </DialogFooter>

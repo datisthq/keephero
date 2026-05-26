@@ -7,10 +7,7 @@ export function Header() {
   return (
     <div className="flex items-center gap-4 justify-between py-1">
       <div className="flex gap-2 items-center text-md text-gray-600 pl-6">
-        <icons.Account
-          strokeWidth={settings.ICON_STROKE_WIDTH}
-          className="size-5"
-        />
+        <icons.Account strokeWidth={settings.ICON_STROKE_WIDTH} className="size-5" />
         Managing account
       </div>
       <div className="flex gap-0">

@@ -13,9 +13,7 @@ export const userMiddleware = os
     })
 
     const { toAuth } = await user.authenticateRequest(request, {
-      authorizedParties: import.meta.env.PROD
-        ? settings.AUTHORIZED_PARTIES
-        : undefined,
+      authorizedParties: import.meta.env.PROD ? settings.AUTHORIZED_PARTIES : undefined,
     })
 
     const auth = toAuth()

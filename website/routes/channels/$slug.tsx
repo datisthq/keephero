@@ -56,26 +56,15 @@ export function Header() {
         to="/channels"
         className="text-md text-muted-foreground pl-2 hover:text-primary flex items-center gap-2"
       >
-        <icons.Return
-          strokeWidth={settings.ICON_STROKE_WIDTH}
-          className="size-5"
-        />
+        <icons.Return strokeWidth={settings.ICON_STROKE_WIDTH} className="size-5" />
         Return to channels
       </TanstackLink>
       <div className="flex gap-2">
-        <Button
-          variant="ghost"
-          size="default"
-          className="rounded-xl cursor-pointer"
-        >
+        <Button variant="ghost" size="default" className="rounded-xl cursor-pointer">
           <icons.Refresh strokeWidth={settings.ICON_STROKE_WIDTH} />
           <span className="text-xl">Refresh</span>
         </Button>
-        <Button
-          variant="ghost"
-          size="default"
-          className="rounded-xl cursor-pointer"
-        >
+        <Button variant="ghost" size="default" className="rounded-xl cursor-pointer">
           <icons.Delete strokeWidth={settings.ICON_STROKE_WIDTH} />
           <span className="text-xl">Delete</span>
         </Button>

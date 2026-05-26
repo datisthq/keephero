@@ -3,9 +3,7 @@ import { RPCLink } from "@orpc/client/fetch"
 import type { RouterClient } from "@orpc/server"
 import type { Router } from "./router.ts"
 
-export function createEngineService(options?: {
-  headers: () => Record<string, string>
-}) {
+export function createEngineService(options?: { headers: () => Record<string, string> }) {
   const url = import.meta.env?.VITE_ENGINE_URL ?? process.env.VITE_ENGINE_URL
   if (!url) {
     throw new Error("Missing environment variable: VITE_ENGINE_URL")

@@ -7,11 +7,7 @@ import { execa } from "execa"
 import { po } from "gettext-parser"
 import { objectKeys } from "ts-extras"
 import { z } from "zod"
-import {
-  type LanguageId,
-  LanguageIdDefault,
-  Languages,
-} from "#constants/language.ts"
+import { type LanguageId, LanguageIdDefault, Languages } from "#constants/language.ts"
 
 // TODO: Move ai part to agent?
 

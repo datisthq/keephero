@@ -23,9 +23,9 @@ function Component() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-500">
-              Login is essential to access all features and keep your data
-              synchronized across devices. Your account ensures secure access to
-              your password manager and encrypted vault.
+              Login is essential to access all features and keep your data synchronized
+              across devices. Your account ensures secure access to your password manager
+              and encrypted vault.
             </p>
           </CardContent>
         </Card>

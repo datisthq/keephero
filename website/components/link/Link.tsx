@@ -4,11 +4,7 @@ import { Button } from "#blocks/button.tsx"
 import { Card, CardContent, CardTitle } from "#blocks/card.tsx"
 import * as icons from "#icons.ts"
 
-export function Link(props: {
-  title: string
-  readingTime: string
-  tags: string[]
-}) {
+export function Link(props: { title: string; readingTime: string; tags: string[] }) {
   const { title, readingTime, tags } = props
 
   return (

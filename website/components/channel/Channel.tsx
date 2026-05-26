@@ -34,9 +34,7 @@ export function Channel(props: {
             )}
           </CardTitle>
           <div className="flex items-center gap-2">
-            <span className="text-muted-foreground text-sm">
-              {linkCount} links total
-            </span>
+            <span className="text-muted-foreground text-sm">{linkCount} links total</span>
             <div className="flex gap-1 flex-wrap">
               {tags.map(tag => (
                 <Badge

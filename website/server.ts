@@ -1,9 +1,6 @@
 import type { Register } from "@tanstack/react-router"
 import type { RequestHandler } from "@tanstack/react-start/server"
-import {
-  createStartHandler,
-  defaultStreamHandler,
-} from "@tanstack/react-start/server"
+import { createStartHandler, defaultStreamHandler } from "@tanstack/react-start/server"
 import { activateLocal, detectServerLanguage } from "#helpers/locale.ts"
 
 // TODO: rebase on createServerEntry and

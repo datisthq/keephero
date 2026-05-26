@@ -39,27 +39,18 @@ export function Sitemap() {
   )
 }
 
-function SitemapColumn(props: {
-  title: React.ReactNode
-  children: React.ReactNode
-}) {
+function SitemapColumn(props: { title: React.ReactNode; children: React.ReactNode }) {
   const { title, children } = props
 
   return (
     <div>
-      <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
-        {title}
-      </h3>
+      <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">{title}</h3>
       <ul className="space-y-2 flex flex-col items-center">{children}</ul>
     </div>
   )
 }
 
-function SitemapItem(props: {
-  to: string
-  label: React.ReactNode
-  external?: boolean
-}) {
+function SitemapItem(props: { to: string; label: React.ReactNode; external?: boolean }) {
   const { to, label, external } = props
 
   return (
