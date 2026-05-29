@@ -15,7 +15,7 @@
     "ui": "shadcn"
   },
   "dependencies": {
-    "@clerk/tanstack-react-start": "0.27.5",
+    "@clerk/tanstack-react-start": "1.3.1",
     "@keephero/engine": "workspace:*",
     "@keephero/logger": "workspace:*",
     "@orpc/tanstack-query": "1.12.3",
@@ -42,7 +42,7 @@
     "react-share": "5.2.2",
     "redaxios": "0.5.1",
     "sonner": "^2.0.7",
-    "srvx": "0.8.15",
+    "srvx": "0.11.13",
     "tailwind-merge": "2.6.0",
     "tw-animate-css": "1.4.0",
     "vite-plugin-babel": "1.3.2",
@@ -72,8 +72,8 @@
     "shadcn": "3.5.1",
     "tailwindcss": "4.1.15",
     "ts-extras": "0.16.0",
-    "vite": "7.1.7",
-    "wrangler": "4.51.0",
+    "vite": "7.3.2",
+    "wrangler": "4.94.0",
     "zod": "4.1.13"
   }
 }
